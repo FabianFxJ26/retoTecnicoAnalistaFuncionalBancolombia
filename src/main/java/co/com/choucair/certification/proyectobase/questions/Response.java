@@ -24,7 +24,7 @@ public class Response implements Question<Boolean>
     public Boolean answeredBy(Actor actor)
     {
         String buttonTextCompleteSetup = Text.of(UltimoPaso.COMPLETE_SETUP).viewedBy(actor).asString();
-        System.out.println("El valor de complete test es: " +datosFormularioRegistro.get(0).getExit().equals(buttonTextCompleteSetup));
+        //System.out.println("El valor de complete test es: " +datosFormularioRegistro.get(0).getExit().equals(buttonTextCompleteSetup));
         return datosFormularioRegistro.get(0).getExit().equals(buttonTextCompleteSetup);
     }
 }

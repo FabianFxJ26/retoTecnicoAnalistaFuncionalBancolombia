@@ -41,8 +41,8 @@ public class LlenarPaginaLocation implements Task
     @Override
     public <T extends Actor> void performAs(T actor) {
      actor.attemptsTo(Enter.theValue(datoFormularioRegistro.get(0).getCity()).into(Direccion.CITY),
-             Hit.the(Keys.ARROW_DOWN).into(Direccion.CITY),
-             Hit.the(Keys.ENTER).into(Direccion.CITY),
+             //Hit.the(Keys.ARROW_DOWN).into(Direccion.CITY),
+             //Hit.the(Keys.ENTER).into(Direccion.CITY),
              Enter.theValue(datoFormularioRegistro.get(0).getPostalCode()).into(Direccion.POSTAL_CODE),
              Click.on(Direccion.CONTAINER_COUNTRY),
              Enter.theValue(datoFormularioRegistro.get(0).getCountry()).into(Direccion.COUNTRY),

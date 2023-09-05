@@ -14,11 +14,6 @@ import static co.com.choucair.certification.proyectobase.userinterface.UltimoPas
 public class LlenarPaginaUltimoPaso implements Task
 {
     public List<DatosFormularioRegistro> datosFormularioRegistro;
-
-    /**
-     * Constructor de la clase
-     * @param datosFormularioRegistro
-     */
     public LlenarPaginaUltimoPaso(List<DatosFormularioRegistro> datosFormularioRegistro) {
         this.datosFormularioRegistro = datosFormularioRegistro;
     }
@@ -26,11 +21,7 @@ public class LlenarPaginaUltimoPaso implements Task
     {
       return Tasks.instrumented(LlenarPaginaUltimoPaso.class,datosFormularioRegistro);
     }
-    /**
-     * El actor ingresa el valor de todos los campo del formulario de ultimo paso al array datosFormulario
-     * @param actor
-     * @param <T>
-     */
+
     @Override
     public <T extends Actor> void performAs(T actor) {
             actor.attemptsTo(Enter.theValue(datosFormularioRegistro.get(0).getPassword()).into(PASSWORD),

@@ -25,11 +25,6 @@ import static co.com.choucair.certification.proyectobase.userinterface.Dispositi
 public class LlenarPaginaDevices implements Task
 {
   private List<DatosFormularioRegistro> datosFormularioRegistro;
-
-    /**
-     * Constructor de la clase
-     * @param datosFormularioRegistro
-     */
     public LlenarPaginaDevices(List<DatosFormularioRegistro> datosFormularioRegistro) {
         this.datosFormularioRegistro = datosFormularioRegistro;
     }
@@ -37,11 +32,6 @@ public class LlenarPaginaDevices implements Task
     {
         return Tasks.instrumented(LlenarPaginaDevices.class,datosFormularioRegistro);
     }
-    /**
-     * El actor ingresa el valor de todos los campo del formulario de dispositivos al array datosFormulario
-     * @param actor
-     * @param <T>
-     */
     @Override
     public <T extends Actor> void performAs(T actor)
     {

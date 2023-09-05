@@ -2,14 +2,6 @@ package co.com.choucair.certification.proyectobase.userinterface;
 
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
-
-/**
- * Reto tecnico automatizacion CHOUCAIR
- * Clase donde evalua el formulario pagina devices
- * datos personales
- * @author Elkin Fabian Alfonso Bermudez
- * @version 1.0
- */
 public class Dispositivos
 {
     public static final Target CONTAINER_COMPUTER = Target.the("Lista SO disponibles")
